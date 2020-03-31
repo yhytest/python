@@ -13,7 +13,8 @@
 # 可以输出当前版本的所有关键字：
 
 import keyword
-keyword.kwlist
+# keyword.kwlist
+print(keyword.kwlist)
 
 #注释
 #Python中单行注释以 # 开头
@@ -30,9 +31,9 @@ else:
 #多行语句
 #Python 通常是一行写完一条语句，但如果语句很长，
 # 我们可以使用反斜杠(\)来实现多行语句，例如：
-total=item_one+\
-    item_two+\
-    item_three
+# total=item_one+\
+#       item_two+\
+#       item_three
 #在 [], {}, 或 () 中的多行语句，不需要使用反斜杠(\)，
 # 例如：
 total=['item_one','item_two','item_three',
@@ -61,8 +62,53 @@ sentence = "这是一个句子。"
 paragraph = """  这是一个段落"""
 
 # 空行
-# 函数之间或类的方法之间用空行分隔，表示一段新的代码的开始。类和函数入口之间也用一行空行分隔，以突出函数入口的开始。
-#
-# 空行与代码缩进不同，空行并不是Python语法的一部分。书写时不插入空行，Python解释器运行也不会出错。但是空行的作用在于分隔两段不同功能或含义的代码，便于日后代码的维护或重构。
-#
+# 函数之间或类的方法之间用空行分隔，
+# 表示一段新的代码的开始。类和函数入口之间也
+# 用一行空行分隔，以突出函数入口的开始。
+
+
+
+
+# 空行与代码缩进不同，空行并不是Python语法的一部分。
+# 书写时不插入空行，Python解释器运行也不会出错。
+# 但是空行的作用在于分隔两段不同功能或含义的代码，
+# 便于日后代码的维护或重构。
+
 # 记住：空行也是程序代码的一部分。
+
+# 等待用户输入
+# 执行下面的程序在按回车键后就会等待用户输入：
+input("\n\n按下 enter 键后退出")
+# 以上代码中 ，"\n\n"在结果输出前会输出两个新的空行。
+# 一旦用户按下 enter 键时，程序将退出。
+
+# 同一行显示多条语句
+import sys
+x='runoob'
+sys.stdout.write(x+'\n')
+# 使用脚本执行以上代码，输入结果为：runoob
+# 使用交互式命令行执行，输出结果为：
+import sys; x = 'runoob'; sys.stdout.write(x + '\n')
+
+# 多个语句构成代码组
+# 缩进相同的一组语句构成一个代码块，我们称之代码组。
+#
+# 像if、while、def和class这样的复合语句，首行以关键字开始，以冒号( : )结束，该行之后的一行或多行代码构成代码组。
+#
+# 我们将首行及后面的代码组称为一个子句(clause)。
+
+# Print 输出
+# print 默认输出是换行的，
+# 如果要实现不换行需要在变量末尾加上 end=""：
+
+#  import 与 from...import
+# 在 python 用 import 或者 from...import 来导入相应的模块。
+# 将整个模块(somemodule)导入，格式为： import somemodule
+# 从某个模块中导入某个函数,格式为： from somemodule import somefunction
+# 从某个模块中导入多个函数,格式为： from somemodule
+# import firstfunc, secondfunc, thirdfunc
+# 将某个模块中的全部函数导入，格式为： from somemodule import *
+
+#  命令行参数
+# 很多程序可以执行一些操作来查看一些基本信息，
+# Python可以使用-h参数查看各参数帮助信息：
